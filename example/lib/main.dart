@@ -176,7 +176,7 @@ class _HomeState extends State<Home> {
                           await SunmiPrinter.initPrinter();
                           await SunmiPrinter.startTransactionPrint(true);
                           await SunmiPrinter.printText('Very small!',
-                              style: SunmiStyle(fontSize: SunmiFontSize.XS));
+                              style: SunmiStyle(fontSize: 14));
                           await SunmiPrinter.lineWrap(2);
 
                           await SunmiPrinter.exitTransactionPrint(true);
@@ -187,7 +187,7 @@ class _HomeState extends State<Home> {
                           await SunmiPrinter.initPrinter();
                           await SunmiPrinter.startTransactionPrint(true);
                           await SunmiPrinter.printText('Very small!',
-                              style: SunmiStyle(fontSize: SunmiFontSize.SM));
+                              style: SunmiStyle(fontSize: 18));
                           await SunmiPrinter.lineWrap(2);
                           await SunmiPrinter.exitTransactionPrint(true);
                         },
@@ -197,7 +197,7 @@ class _HomeState extends State<Home> {
                           await SunmiPrinter.initPrinter();
                           await SunmiPrinter.startTransactionPrint(true);
                           await SunmiPrinter.printText('Normal font',
-                              style: SunmiStyle(fontSize: SunmiFontSize.MD));
+                              style: SunmiStyle(fontSize: 24));
 
                           await SunmiPrinter.lineWrap(2);
                           await SunmiPrinter.exitTransactionPrint(true);
@@ -207,7 +207,7 @@ class _HomeState extends State<Home> {
                         onPressed: () async {
                           await SunmiPrinter.initPrinter();
                           await SunmiPrinter.printText('Large font',
-                              style: SunmiStyle(fontSize: SunmiFontSize.LG));
+                              style: SunmiStyle(fontSize: 36));
 
                           await SunmiPrinter.lineWrap(2);
                           await SunmiPrinter.exitTransactionPrint(true);
@@ -217,7 +217,7 @@ class _HomeState extends State<Home> {
                         onPressed: () async {
                           await SunmiPrinter.initPrinter();
                           await SunmiPrinter.startTransactionPrint(true);
-                          await SunmiPrinter.setFontSize(SunmiFontSize.XL);
+                          await SunmiPrinter.setFontSize(42);
                           await SunmiPrinter.printText('Very Large font!');
                           await SunmiPrinter.resetFontSize();
                           await SunmiPrinter.lineWrap(2);
@@ -275,7 +275,7 @@ class _HomeState extends State<Home> {
                           style: SunmiStyle(
                               align: SunmiPrintAlign.CENTER,
                               bold: true,
-                              fontSize: SunmiFontSize.LG),
+                              fontSize: 36),
                         );
 
                         await SunmiPrinter.lineWrap(2);

@@ -76,12 +76,3 @@ enum SunmiBarcodeTextPos {
   BOTH,
 }
 
-///*SunmiFontSize*
-///Enum to set font in the printer
-enum SunmiFontSize {
-  XS,
-  SM,
-  MD,
-  LG,
-  XL,
-}

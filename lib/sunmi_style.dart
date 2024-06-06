@@ -6,9 +6,9 @@ import 'enums.dart';
 ///The thext can come already with [align], [fontSize] and *bold*, and then you don't need to type 3 commands to do the same THING!
 
 class SunmiStyle {
-  SunmiFontSize? fontSize;
+  int fontSize = 24;
   SunmiPrintAlign? align;
   bool? bold;
 
-  SunmiStyle({this.fontSize, this.align, this.bold});
+  SunmiStyle({this.fontSize =24 , this.align, this.bold});
 }
